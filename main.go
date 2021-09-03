@@ -217,7 +217,7 @@ func (u Universe) dead_cell_test(i int, j int) rune {
 }
 
 /*
-*@Desc: Apply Game of Life rules on a live cell.
+*@Desc: Apply Game of Life rules on a living cell.
  */
 func (u Universe) alive_cell_test(i int, j int) rune {
 
