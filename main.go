@@ -247,17 +247,17 @@ func (u Universe) calc_next(i int, j int) rune {
 /*
 * @Desc: For each cell, get next state.
  */
-func (u Universe) Next() {
+func (u *Universe) Next() {
 
 	u2 := NewUniverse()
 
-	for i := range u {
-		for j := range u[i] {
+	for i := range *u {
+		for j := range (*u)[i] {
 			u2[i][j] = u.calc_next(i, j)
 		}
 	}
 
-	u = u2
+	*u = u2
 }
 
 func main() {
