@@ -1,3 +1,3 @@
-module game_of_life
+module github.com/lomes0/Gols
 
 go 1.16
