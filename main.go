@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"math/rand"
-	"time"
 )
 
 const (
@@ -258,15 +257,4 @@ func (u *Universe) Next() {
 	}
 
 	*u = u2
-}
-
-func main() {
-
-	uni := NewUniverse()
-	uni.Seed()
-	for i := 0; i < 9999; i++ {
-		uni.Print()
-		uni.Next()
-		time.Sleep(time.Second * 1)
-	}
 }
